@@ -1,21 +1,21 @@
 import pandas as pd
 
 def showAllInfo():
-    df = pd.read_csv("docs\student_info.txt", sep=" ", names = ["Name","Surname","Student No","Grade"])
+    df = pd.read_csv("student_info.txt", sep=" ", names = ["Name","Surname","Student No","Grade"])
     print(df)
 
 def showDataframe():
-    df = pd.read_csv("docs\grades_info.txt", sep=" ", names = ["Name","Surname","","Grade"," ","Status"])
+    df = pd.read_csv("grades_info.txt", sep=" ", names = ["Name","Surname","","Grade"," ","Status"])
     print(df)
 
 def saveExcel():
-    with open("docs\grades_info.txt","r",encoding="utf-8") as file:
+    with open("grades_info.txt","r",encoding="utf-8") as file:
         data = pd.DataFrame(file)
         data.to_excel("excel_grades.xlsx")
 
 def calcPass(fname,lname,grade):
     global gradesList
-    with open("docs\grades_info.txt","a",encoding="utf-8") as file:
+    with open("grades_info.txt","a",encoding="utf-8") as file:
         gradeS = ""
         if grade>=90 and grade<=100:
             gradeS = "AA"
@@ -79,7 +79,7 @@ def studentEntry():
         grade = calcGrade(visaGrade,finalGrade)
         calcPass(firstName,lastName,grade)
 
-        with open("docs\student_info.txt","a",encoding="utf-8") as file:
+        with open("student_info.txt","a",encoding="utf-8") as file:
             file.write(firstName + " " + lastName + " " + str(studentNo) + " " + str(grade)+"\n")
             break
 
