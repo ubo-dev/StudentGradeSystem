@@ -1,4 +1,4 @@
-# StudentGradeSystem
+# Student Grade System
 Student grade system using Pandas.
 
 ![image](https://user-images.githubusercontent.com/79909004/180275109-f55042a6-c731-4160-be9d-18a6498f4838.png)
