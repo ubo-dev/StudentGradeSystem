@@ -15,7 +15,7 @@ Student grade system using Pandas.
 
 ![image](https://user-images.githubusercontent.com/79909004/180278384-5aa32dc0-47e6-433c-b3b5-8af022bad0b2.png)
 
-4- Creating an excel which contains the information of students who has passed and failed.
+4- Creating an excel file which contains the information of students who has passed and failed.
 
 ![image](https://user-images.githubusercontent.com/79909004/180278695-13a84d7f-f1bf-4724-b997-bab422638961.png)
 
